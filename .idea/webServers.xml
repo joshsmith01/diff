@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="00871d58-7799-4f69-a26b-2178ee7ac7b8" name="Diff - gd" url="http://diff.efficiencyofmovement.com">
+        <fileTransfer host="23.229.204.167" port="22" rootFolder="/home/joshsmith01/public_html/diff" accessType="SFTP" password="df93df98df92df99df9cdffbdff3df9cdfe1df9ddfeddf92dfcddf93" username="joshsmith01">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

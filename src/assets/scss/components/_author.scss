@@ -1,0 +1,11 @@
+footer {
+  padding: rem-calc(68) 0 rem-calc(58);
+  background-image: url("/assets/img/png/dark-waves.png");
+  p {
+    color: #e4e4e4;
+    font-family: 'Lato', $body-font-family;
+    font-size: 1.188rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}

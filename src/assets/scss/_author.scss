@@ -1,0 +1,32 @@
+// SECTION Footer
+footer {
+  padding: rem-calc(68) 0 rem-calc(58);
+  background-image: url("/assets/img/png/dark-waves.png");
+  p {
+    color: #e4e4e4;
+    font-family: 'Lato', $body-font-family;
+    font-size: 1.188rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+}
+
+// SECTION Contact
+.contact {
+  padding: rem-calc(152) 0 rem-calc(321);
+  background-color: #f7f7f1;
+  .social-contact {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: $black;
+      transition: color .1s ease-in;
+      &:hover {
+        color: lighten($black, 50%)
+      }
+    }
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}

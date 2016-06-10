@@ -25,6 +25,21 @@
   }
 }
 
+.med-underline {
+  display: inline-block;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 40%;
+    margin-left: -10%;
+    display: inline-block;
+    height: 1em;
+    width: 50%;
+    border-bottom: 3px solid #222;
+    margin-top: 10px;
+  }
+}
 .small-underline {
   display: inline-block;
   position: relative;
@@ -40,7 +55,23 @@
     margin-top: 10px;
   }
 }
-
+.centered-accent {
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+.row-padding {
+  padding: rem-calc(30) 0;
+}
+.up-image-60 {
+  @include breakpoint(medium down) {
+    margin-top: 0;
+  }
+  margin-top: -60%;
+}
+.pos-rel {
+  position: relative;
+}
 
 // SECTION Footer
 footer {
@@ -126,4 +157,91 @@ footer {
       @extend .full-underline;
     }
   }
+}
+
+
+// SECTION About
+.about {
+  background-color: #f7f7f1;
+  padding: rem-calc(151) 0 rem-calc(160);
+  .section-title {
+    margin-bottom: rem-calc(39);
+  }
+  .overlap-left {
+    @include breakpoint(large) {
+
+    margin-left: - (map_get($grid-column-gutter, medium))*3;
+    margin-top: rem-calc(63);
+    flex: 0 0 48.66667%;
+    max-width: 48.66667%;
+    }
+
+    p {
+      font-family: 'Lato', $body-font-family;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+
+      // Text style for "Lorem ipsum do"
+      color: $body-font-color;
+    }
+  }
+  .accent-hint {
+    color: $blue;
+  }
+}
+
+// SECTION Work
+.work {
+  padding: rem-calc(150) 0;
+  .check-more-posts {
+    color: $body-font-color;
+    font-family: 'Open Sans', $body-font-family;
+    font-size: 1.063rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+  }
+  .flex-end {
+    justify-content: flex-end;
+  }
+  .three-straight-lines {
+    height: 250px;
+  }
+  .pos-rel {
+    img {
+      @include breakpoint(large) {
+        position: absolute;
+        top: -30%;
+        left: 50%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SECTION Clients
+.clients {
+  background-color: #f7f7f1;
+  padding: rem-calc(153) 0 rem-calc(138);
 }

@@ -73,6 +73,153 @@
   position: relative;
 }
 
+.image {
+  position: relative;
+  width: 100%; /* for IE 6 */
+}
+.image-caption {
+  position: absolute;
+  width: 100%;
+  font-weight: 800;
+  @include breakpoint( medium down) {
+    position: relative;
+    left: 0 !important;
+  }
+  span {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}
+.cap-upper-right {
+  top: -40%;
+  right: -325px;
+}
+.cap-upper-left {
+  top: 10%;
+  left: -10px;
+}
+.cap-lower-right {
+
+}
+.cap-lower-left {
+
+}
+
+
+.cap-mid-left {
+  top: 50%;
+  left: -10px;
+}
+
+.cap-mid-low-left {
+  top: 17%;
+  left: -10px;
+}
+.flex-right {
+  justify-content: flex-end;
+}
+.strikethrough {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.em-dash {
+  border-bottom: 3px solid $white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// SECTION Header 
+header {
+  background-image: url("../img/png/bg.png");
+  background-size: cover;
+  padding: rem-calc(20) 0 rem-calc(30);
+  color: $white;
+  a.med-underline {
+    color: #fffefe;
+    font-family: 'Open Sans', $header-font-family,;
+    font-size: 1.813rem;
+    font-weight: 600;
+    line-height: 2.438rem;
+    text-transform: uppercase;
+    &:before {
+      border-bottom: 3px solid #fffefe;
+      height: 1.1em;
+      left: 34.8%;
+    }
+    @include breakpoint(medium down) {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+  }
+  .site-title-navigation {
+    padding: rem-calc(60) 0 rem-calc(0);
+  }
+  .icon-close {
+    display: flex;
+    justify-content: flex-end;
+  }
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .social-icons-header {
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: $white;
+    }
+  }
+  .quad-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    li {
+      width: 50%;
+      text-align: center;
+      padding-bottom: 7rem;
+      @include breakpoint(medium down) {
+        padding-bottom: 3.5rem;
+      }
+    }
+  }
+  .fa {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+
+
+
 // SECTION Footer
 footer {
   padding: rem-calc(68) 0 rem-calc(58);
@@ -219,29 +366,15 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // SECTION Clients
 .clients {
   background-color: #f7f7f1;
   padding: rem-calc(153) 0 rem-calc(138);
+  .company-logo {
+    padding-top: map_get($grid-column-gutter, medium);
+    padding-bottpm: map_get($grid-column-gutter, medium);
+  }
+  .logo-behance {
+    padding-top: map_get($grid-column-gutter, medium)*4;
+  }
 }
